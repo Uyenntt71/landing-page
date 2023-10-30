@@ -26,6 +26,7 @@ module.exports = {
       },
       orange: {
         100: "#FFECEC",
+        300: "#fdba74",
         500: "#F53855",
       },
       green: {
@@ -41,7 +42,13 @@ module.exports = {
         500: "#DDDDDD",
       },
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+    },
   },
   variants: {
     extend: {
