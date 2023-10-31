@@ -3,12 +3,13 @@ import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+import { LANGUAGE_KEY } from "../pages";
 
 export default function Example() {
   const { i18n, t } = useTranslation();
   var language;
   if (typeof window !== "undefined") {
-    language = localStorage.getItem("language");
+    language = localStorage.getItem(LANGUAGE_KEY);
   }
 
   const people = [
@@ -25,7 +26,7 @@ export default function Example() {
   ];
 
   const handleChangeLanguage = (lng) => {
-    localStorage.setItem("language", lng.key);
+    localStorage.setItem(LANGUAGE_KEY, lng.key);
     i18n.changeLanguage(lng.key);
   };
 

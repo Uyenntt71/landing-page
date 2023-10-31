@@ -1,9 +1,31 @@
 {
-  "welcome": "Chao xin!",
-  "about": "Thong tin chung",
-  "contact": "Lien he",
+  "about": "Giới thiệu",
+  "feature": "Tính năng",
+  "pricing": "Bảng giá",
+  "testimonial": "Nhận xét từ khách hàng",
+  "signin": "Đăng nhập",
+  "signup": "Đăng ký",
   "language": {
-    "en": "Tieng Anh",
-    "vi": "Tieng Viet"
+    "en": "Tiếng Anh",
+    "vi": "Tiếng Việt"
+  },
+  "footer": {
+    "product": "Sản phẩm",
+    "download": "Tải xuống",
+    "pricing": "Bảng giá",
+    "locations": "Địa Điểm",
+    "server": "Máy Chủ",
+    "countries": "Quốc Gia",
+    "blogs": "Bài Viết",
+    "engage": "Kết Nối",
+    "FAQ": "Câu Hỏi Thường Gặp",
+    "tutorials": "Hướng Dẫn",
+    "aboutUs": "Về Chúng Tôi",
+    "privacyPolicy": "Chính Sách Bảo Mật",
+    "termsofService": "Điều Khoản Dịch Vụ",
+    "earnMoney": "Kiếm Tiền",
+    "affiliate": "Hợp Tác Kinh Doanh",
+    "becomePartner": "Trở Thành Đối Tác",
+    "getStarted": "Bắt Đầu"
   }
 }

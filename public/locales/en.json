@@ -1,9 +1,31 @@
 {
-  "welcome": "Welcome to my Next.js app!",
   "about": "About",
-  "contact": "Contact",
+  "feature": "Feature",
+  "pricing": "Pricing",
+  "testimonial": "Testimonial",
+  "signin": "Sign in",
+  "signup": "Sign up",
   "language": {
     "en": "English",
     "vi": "Vietnamese"
+  },
+  "footer": {
+    "product": "Product",
+    "download": "Download",
+    "pricing": "Pricing",
+    "locations": "Locations",
+    "server": "Server",
+    "countries": "Countries",
+    "blogs": "Blogs",
+    "engage": "Engage",
+    "FAQ": "FAQ",
+    "tutorials": "Tutorials",
+    "aboutUs": "About Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsofService": "Terms of Service",
+    "earnMoney": "Earn Money",
+    "affiliate": "Affiliate",
+    "becomePartner": "Become Partner",
+    "getStarted": "Get Started"
   }
 }

@@ -3,7 +3,11 @@ import LogoVPN from "../../public/assets/Logo.svg";
 import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-white-300 pt-44 pb-24">
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
@@ -24,62 +28,71 @@ const Footer = () => {
               <Instagram className="h-6 w-6" />
             </div>
           </div>
-          <p className="text-gray-400">©{new Date().getFullYear()} - LaslesVPN</p>
+          <p className="text-gray-400">
+            ©{new Date().getFullYear()} - LaslesVPN
+          </p>
         </div>
         <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Product</p>
+          <p className="text-black-600 mb-4 font-medium text-lg">
+            {t("footer.product")}
+          </p>
           <ul className="text-black-500 ">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Download{" "}
+              {t("footer.download")}{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Pricing{" "}
+              {t("footer.pricing")}{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Locations{" "}
+              {t("footer.locations")}{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Server{" "}
+              {t("footer.server")}{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Countries{" "}
+              {t("footer.countries")}{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Blog{" "}
+              {t("footer.blogs")}{" "}
             </li>
           </ul>
         </div>
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
+          <p className="text-black-600 mb-4 font-medium text-lg">
+            {" "}
+            {t("footer.engage")}
+          </p>
           <ul className="text-black-500">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               LaslesVPN ?{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              FAQ{" "}
+              {t("footer.FAQ")}{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Tutorials{" "}
+              {t("footer.tutorials")}{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              About Us{" "}
+              {t("footer.aboutUs")}{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Privacy Policy{" "}
+              {t("footer.privacyPolicy")}{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Terms of Service{" "}
+              {t("footer.termsofService")}{" "}
             </li>
           </ul>
         </div>
         <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Earn Money</p>
+          <p className="text-black-600 mb-4 font-medium text-lg">
+            {t("footer.earnMoney")}
+          </p>
           <ul className="text-black-500">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Affiliate{" "}
+              {t("footer.affiliate")}{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Become Partner{" "}
+              {t("footer.becomePartner")}{" "}
             </li>
           </ul>
         </div>
