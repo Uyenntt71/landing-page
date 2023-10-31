@@ -1,5 +1,9 @@
 {
   "welcome": "Chao xin!",
   "about": "Thong tin chung",
-  "contact": "Lien he"
+  "contact": "Lien he",
+  "language": {
+    "en": "Tieng Anh",
+    "vi": "Tieng Viet"
+  }
 }

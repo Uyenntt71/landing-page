@@ -46,7 +46,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 a")
               }
             >
-              About
+              {t("about")}
             </LinkScroll>
             <LinkScroll
               activeClass="active"

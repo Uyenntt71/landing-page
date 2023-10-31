@@ -1,5 +1,9 @@
 {
   "welcome": "Welcome to my Next.js app!",
   "about": "About",
-  "contact": "Contact"
+  "contact": "Contact",
+  "language": {
+    "en": "English",
+    "vi": "Vietnamese"
+  }
 }
