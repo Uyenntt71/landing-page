@@ -17,7 +17,7 @@ Choose one of the following options to get started:
 - Template building using NextJS Version 10
 - Tailwind v2.0
 
-## Feature Template
+## Feature_1 Template
 
 - Using [NextJS Image](https://nextjs.org/docs/api-reference/next/image) for Image Optimization
 - Slider using [React Slick](https://react-slick.neostack.com/docs/api)
@@ -35,6 +35,6 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 Code released under the MIT license.
 
-## To Do List Add Feature
+## To Do List Add Feature_1
 
 - [ ] Animation using Framer Motion

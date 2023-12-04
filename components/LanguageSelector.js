@@ -40,19 +40,19 @@ export default function Example() {
 
   const genFlag = (src) => {
     return (
-      <div className="p-2 lg:p-0 md:h-7 md:w-7 h-12 w-12 flex items-center">
+      <div className="p-0 lg:p-0 lg:h-7 lg:w-7 h-6 w-6 flex items-center">
         <Image src={src} width={250} height={170} alt="Flag icon" />
       </div>
     );
   };
 
   return (
-    <div className="relative w-48 bg-white-500">
+    <div className="relative w-20 lg:w-48 bg-white-500 dark:bg-black-600">
       <Listbox value={selected} onChange={handleChangeLanguage}>
         <div className="relative mt-1 justify-end flex">
           <Listbox.Button
-            className="relative w-16 cursor-pointer bg-white-500 
-          py-2 px-2 text-left focus:outline-none focus-visible:border-indigo-500 
+            className="relative lg:w-16 w-11 cursor-pointer 
+          py-2 lg:px-2 text-left focus:outline-none focus-visible:border-indigo-500 
           focus-visible:ring-2 focus-visible:ring-white-500/75 focus-visible:ring-offset-2 
           focus-visible:ring-offset-orange-300 sm:text-sm text-black-500 hover:opacity-70
           "
@@ -60,8 +60,11 @@ export default function Example() {
             <span className="truncate flex items-center">
               {genFlag(selected.icon)}
             </span>
-            <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
-              <ChevronDownIcon className="h-5 w-5 " aria-hidden="true" />
+            <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center lg:px-2">
+              <ChevronDownIcon
+                className="h-5 w-5 dark:bg-black-600 dark:text-white-500"
+                aria-hidden="true"
+              />
             </span>
           </Listbox.Button>
           <Transition
@@ -71,7 +74,7 @@ export default function Example() {
             leaveTo="opacity-0"
           >
             <Listbox.Options
-              className="absolute top-16 sm:top-10 mt-1 max-h-60 w-full overflow-auto 
+              className="absolute lg:top-12 top-10 mt-1 max-h-60 w-44 lg:w-48 overflow-auto 
             rounded-md bg-white-500 py-1 text-base ring-1 ring-black-600/5
              focus:outline-none sm:text-sm"
             >
@@ -80,7 +83,7 @@ export default function Example() {
                 return (
                   <Listbox.Option
                     key={personIdx}
-                    className={`relative cursor-pointer select-none py-2 pl-10 pr-4 ${
+                    className={`relative cursor-pointer select-none py-0 lg:py-2 pl-10 pr-4 ${
                       isActive
                         ? "text-orange-500 bg-orange-100 hover:text-orange-300"
                         : "text-black-500 hover:text-orange-300"
@@ -96,7 +99,9 @@ export default function Example() {
                             }`}
                           >
                             {genFlag(person.icon)}
-                            <div className="pl-3">{person.name}</div>
+                            <div className="pl-3 text-xs sm:text-base">
+                              {person.name}
+                            </div>
                           </span>
                           {isActive ? (
                             <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-orange-500">

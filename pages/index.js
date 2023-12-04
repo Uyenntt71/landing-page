@@ -1,8 +1,9 @@
-import Feature from "../components/Feature";
-import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
+import Feature from "../components/Feature";
+import HowToWork from "../components/HowToWork";
+import Demo from "../components/Demo";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
@@ -28,11 +29,12 @@ export default function Home() {
 
   return (
     <>
-      <SeoHead title="LaslesVPN Landing Page" />
+      <SeoHead title="Home Page" />
       <Layout>
         <Hero />
         <Feature />
-        <Pricing />
+        <HowToWork />
+        <Demo />
       </Layout>
     </>
   );
