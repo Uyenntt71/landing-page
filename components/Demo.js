@@ -197,7 +197,7 @@ const Demo = () => {
                           ""
                         )}
                       >
-                        {posts.map((post) => (
+                        {posts?.map((post) => (
                           <li
                             key={post.id}
                             className="cursor-pointer relative p-3 hover:opacity-60"

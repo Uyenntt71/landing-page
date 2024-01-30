@@ -33,7 +33,7 @@ export default function Home() {
       <Layout>
         <Hero />
         <Feature />
-        <HowToWork />
+        {/* <HowToWork /> */}
         <Demo />
       </Layout>
     </>

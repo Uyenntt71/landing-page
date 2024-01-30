@@ -67,7 +67,7 @@ const Header = () => {
             >
               {t("feature")}
             </LinkScroll>
-            <LinkScroll
+            {/* <LinkScroll
               activeClass="active"
               to="how-it-works"
               spy={true}
@@ -84,7 +84,7 @@ const Header = () => {
               }
             >
               How it works
-            </LinkScroll>
+            </LinkScroll> */}
             <LinkScroll
               activeClass="active"
               to="demo"
@@ -179,7 +179,7 @@ const Header = () => {
               </svg>
               {t("feature")}
             </LinkScroll>
-            <LinkScroll
+            {/* <LinkScroll
               activeClass="active"
               to="how-it-works"
               spy={true}
@@ -210,7 +210,7 @@ const Header = () => {
                 />
               </svg>
               How it works
-            </LinkScroll>
+            </LinkScroll> */}
             <LinkScroll
               activeClass="active"
               to="demo"
