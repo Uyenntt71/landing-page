@@ -1,7 +1,8 @@
 import React from "react";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
-import "videojs-http-source-selector";
+import "videojs-contrib-quality-levels";
+import videojsqualityselector from "videojs-hls-quality-selector";
 
 export const VideoJS = (props) => {
   const videoRef = React.useRef(null);
@@ -14,23 +15,29 @@ export const VideoJS = (props) => {
       // The Video.js player needs to be _inside_ the component el for React 18 Strict Mode.
       const videoElement = document.createElement("video-js");
 
-      // videoElement.classList.add("vjs-big-play-centered");
-      videoElement.classList.add("video-js");
-      videoElement.classList.add("vjs-lime");
-
+      videoElement.id = "video-id";
+      videoElement.classList.add("vjs-big-play-centered");
       videoRef.current.appendChild(videoElement);
 
-      const player = (playerRef.current = videojs(videoElement, options, () => {
-        videojs.log("player is ready");
-        onReady && onReady(player);
-      }));
-
+      const player = (playerRef.current = videojs(
+        videoElement,
+        { ...options, sources: options.sources?.[0].src },
+        () => {
+          videojs.log("player is ready");
+          onReady && onReady(player);
+        }
+      ));
+      let qualityLevels = player.qualityLevels();
+      console.log("qualityLevels", qualityLevels);
+      player.hlsQualitySelector = videojsqualityselector;
+      player.hlsQualitySelector();
       // You could update an existing player in the `else` block here
       // on prop change, for example:
     } else {
       const player = playerRef.current;
-
-      player.autoplay(options.autoplay);
+      let qualityLevels = player.qualityLevels();
+      console.log("qualityLevels", qualityLevels);
+      // player.autoplay(options.autoplay);
       player.src(options.sources);
     }
   }, [options, videoRef]);

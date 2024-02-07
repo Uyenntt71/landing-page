@@ -1,4 +1,5 @@
 @import "tailwindcss/base";
+@import "./video.css";
 
 @layer base {
     body {

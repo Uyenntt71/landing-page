@@ -80,7 +80,7 @@ const ThemeSelector = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="#4F5665"
-          class="lg:w-6 lg:h-6 w-5 h-5"
+          className="lg:w-6 lg:h-6 w-5 h-5"
         >
           <path
             strokeLinecap="round"
@@ -96,7 +96,7 @@ const ThemeSelector = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="#4F5665"
-          class="lg:w-6 lg:h-6 w-5 h-5"
+          className="lg:w-6 lg:h-6 w-5 h-5"
         >
           <path
             strokeLinecap="round"

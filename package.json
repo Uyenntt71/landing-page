@@ -29,8 +29,9 @@
     "sass": "^1.69.5",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^3.1.8",
-    "video.js": "^7.21.3",
+    "video.js": "^8.10.0",
     "videojs-contrib-quality-levels": "^3.0.0",
+    "videojs-hls-quality-selector": "^1.1.4",
     "videojs-http-source-selector": "^1.1.6"
   },
   "devDependencies": {
