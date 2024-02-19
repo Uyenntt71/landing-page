@@ -1,8 +1,8 @@
 import React from "react";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
-import "videojs-contrib-quality-levels";
-import videojsqualityselector from "videojs-hls-quality-selector";
+import "videojs-contrib-quality-levels"; //require for 'videojs-http-source-selector'
+import "videojs-hls-quality-selector";
 
 export const VideoJS = (props) => {
   const videoRef = React.useRef(null);
@@ -21,23 +21,28 @@ export const VideoJS = (props) => {
 
       const player = (playerRef.current = videojs(
         videoElement,
-        { ...options, sources: options.sources?.[0].src },
+        {
+          ...options,
+          sources: [
+            {
+              src: `${process.env.API_ORIGIN}/hls/totoro2/master.m3u8`,
+              type: "application/x-mpegURL",
+            },
+          ],
+        },
         () => {
           videojs.log("player is ready");
           onReady && onReady(player);
         }
       ));
-      let qualityLevels = player.qualityLevels();
-      console.log("qualityLevels", qualityLevels);
-      player.hlsQualitySelector = videojsqualityselector;
-      player.hlsQualitySelector();
+
+      player.hlsQualitySelector({
+        displayCurrentQuality: true,
+      });
       // You could update an existing player in the `else` block here
       // on prop change, for example:
     } else {
       const player = playerRef.current;
-      let qualityLevels = player.qualityLevels();
-      console.log("qualityLevels", qualityLevels);
-      // player.autoplay(options.autoplay);
       player.src(options.sources);
     }
   }, [options, videoRef]);
