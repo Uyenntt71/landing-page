@@ -1,40 +1,34 @@
-# [Tailwind VPN Landingpage](https://next-landing-vpn.vercel.app/) - Free Landingpage Template Apps
+# NextJS Landing Page
 
-Tailwind VPN Landingpage is an open source, apps landing page template for [Tailwind CSS](https://tailwindcss.com/) and[ NextJS](nextjs.org/) coded by [Faldi](twitter.com/f2aldi) and design from [Didi](https://twitter.com/didiikurniawann).
-
-![Landing Page](./landingpage.png)
+This project is a fork of the [Next.js VPN Landing Page template](https://next-landing-vpn.vercel.app/). It serves as the foundation for my custom landing page, which I can modify and extend arcording to my specific needs.
 
 ## Getting Started
 
-Choose one of the following options to get started:
+To get started with this project, follow these steps:
 
-- [Download the latest release](https://github.com/naufaldi/next-landing-vpn/archive/main.zip)
-- Clone the repo: `git clone https://github.com/naufaldi/next-landing-vpn.git`
-- Fork the repo
+1. clone the repository:
+- [Download the latest release](https://github.com/Uyenntt71/landing-page/archive/refs/heads/main.zip)
+- Clone the repo: `git clone https://git@github.com:Uyenntt71/landing-page.git`
 
-## About the Template
+2. Install dependencies:
+```
+cd your-repo
+npm install
+```
 
-- Template building using NextJS Version 10
-- Tailwind v2.0
+3. Run the development server:
+```
+npm run dev
+```
+The application should now be running on [http://localhost:3000](http://localhost:3000).
 
-## Feature_1 Template
+## Deployment
 
-- Using [NextJS Image](https://nextjs.org/docs/api-reference/next/image) for Image Optimization
-- Slider using [React Slick](https://react-slick.neostack.com/docs/api)
-- Smooth Scrolling and Active menu using [React Scroll](https://www.npmjs.com/package/react-scroll)
+The live deployment of this project can be found at [Live Deployment](https://landing-page-dusky-alpha.vercel.app/). 
 
-## Bugs and Issues
+## Contributing
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/naufaldi/next-landing-vpn/issues/new) here on GitHub.
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to submit a pull request.
 
-## Creator
-
-[Tailwind VPN Landingpage](https://next-landing-vpn.vercel.app/) was coded and modified by and is maintained by **[me](https://github.com/naufaldi/)**, and dekstop design by [Didi Kurniawan](https://twitter.com/didiikurniawann)
-
-## Copyright and License
-
-Code released under the MIT license.
-
-## To Do List Add Feature_1
-
-- [ ] Animation using Framer Motion
+-------
+Original Template: [Next.js VPN Landing Page template](https://next-landing-vpn.vercel.app/)
