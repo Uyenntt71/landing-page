@@ -48,7 +48,7 @@ const Demo = () => {
       const hlsData = res.data?.map((item) => {
         return {
           id: item.id,
-          url: `${process.env.API_ORIGIN}${item.hlsURL}`,
+          url: `${process.env.API_ORIGIN}${item.hlsurl}`,
           name: item.name,
           thumb: `${process.env.API_ORIGIN}${item.thumb}`,
           type: "application/x-mpegURL",
@@ -58,7 +58,7 @@ const Demo = () => {
       const dashData = res.data?.map((item) => {
         return {
           id: item.id,
-          url: `${process.env.API_ORIGIN}${item.dashURL}`,
+          url: `${process.env.API_ORIGIN}${item.dashurl}`,
           name: item.name,
           thumb: `${process.env.API_ORIGIN}${item.thumb}`,
           type: "application/dash+xml",
