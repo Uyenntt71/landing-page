@@ -14,7 +14,7 @@ module.exports = {
     styledComponents: true,
   },
   env: {
-    API_ORIGIN: "http://127.0.0.1:3080",
+    API_ORIGIN: "https://streaming-server-7e13.onrender.com",
   },
   reactStrictMode: false,
   swcMinify: true,
